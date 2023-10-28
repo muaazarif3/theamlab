@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="board">
+                <div class="boardheader">
+                    <div class="tabs">
+                        <div class="tab active" onclick="tabForPrice()">
+                            <p>Additive&nbsp;Manufacturing</p>
+                        </div>
+                        <div class="tab" onclick="tabForPrice()">
+                            <p>Sheet Fabrication</p>
+                        </div>
+                        <div class="tab" onclick="tabForPrice()">
+                            <p>CNC Machining</p>
+                        </div>
+                    </div>
+                    <a href="addsurface.html" style="text-decoration: none;">
+                        <div class="add"><img src="images/Union.png" alt=""> add</div>
+                    </a>
+                </div>
+                <div class="filter">
+                    <div class="serachimg">
+                        <img src="images/search.png" alt="">
+                        <input type="search" placeholder="search by surface finish">
+                    </div>
+                    <div class="bigdropdown">
+                        <div class="dropdown">
+                            <p>instock</p>
+                            <img src="images/star-3.png" alt="">
+                        </div>
+                        <div class="filterbox">
+                            <img src="images/filter2.png" alt=""> filter
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metarialtabel">
+                    <div class="tabelheader1">
+                        <div class="item1">type</div>
+                        <div class="item1">category</div>
+                        <div class="item1">Material</div>
+                        <div class="item1">price per cm*</div>
+                        <div class="item1">services</div>
+                        <div class="item1">actions
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">analyzing type 2</div>
+                        <div class="item1">N/A</div>
+                        <div class="item1">Adipiscing</div>
+                        <div class="item1">
+                            <div class="real" onmouseenter="colorRal()" onmouseleave="colorRal1()">
+                                <div class="ral">
+                                    <p>RAL colors:</p>
+                                    <img src="images/mix.png" alt="">
+                                </div>
+                                <img src="images/star-3.png" alt=""  class="colors">
+                            </div>
+                            <div class="editactioncolor">
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/yellow.png" alt="">yellow
+                                    </div>
+                                    AED 8.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/orange.png" alt="">orange
+                                    </div>
+                                    AED 9.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/red.png" alt="">red
+                                    </div>
+                                    AED 10.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/violet.png" alt="">violet
+                                    </div>
+                                    AED 6.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/blue.png" alt="">blue
+                                    </div>
+                                    AED 12.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/green.png" alt="">green
+                                    </div>
+                                    AED 18.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/grey.png" alt="">grey
+                                    </div>
+                                    AED 19.00
+                                </div>
+                                <div class="colorline">
+                                    <div class="colorimg">
+                                        <img src="images/brown.png" alt="">brown
+                                    </div>
+                                    AED 14.00
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item1">
+                            <div class="stock">availiable</div>
+                        </div>
+                        <div class="item1"><img src="images/3dot.png" alt="" class="dots">
+                            <div class="editaction">
+                                <i class="fas fa-pencil-alt"><span>edit</span></i>
+                                <i class="fas fa-trash-alt"><span>delete</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">analyzing type 2</div>
+                        <div class="item1">N/A</div>
+                        <div class="item1">flexible resin</div>
+
+                        <div class="item1">AED 74.00
+                        </div>
+                        <div class="item1">
+                            <div class="stock" style="color: #d62828; border-color: #d62828; width: 100px;">
+                                unavailable</div>
+                        </div>
+                        <div class="item1"><img src="images/3dot.png" alt="" class="dots">
+                            <div class="editaction">
+                                <i class="fas fa-pencil-alt"><span>edit</span></i>
+                                <i class="fas fa-trash-alt"><span>delete</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">analyzing type 2</div>
+                        <div class="item1">N/A</div>
+                        <div class="item1">flexible resin</div>
+
+                        <div class="item1">AED 74.00
+                        </div>
+                        <div class="item1">
+                            <div class="stock" style="color: #d62828; border-color: #d62828; width: 100px;">
+                                unavailable</div>
+                        </div>
+                        <div class="item1"><img src="images/3dot.png" alt="" class="dots">
+                            <div class="editaction">
+                                <i class="fas fa-pencil-alt"><span>edit</span></i>
+                                <i class="fas fa-trash-alt"><span>delete</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">analyzing type 2</div>
+                        <div class="item1">N/A</div>
+                        <div class="item1">flexible resin</div>
+
+                        <div class="item1">AED 74.00
+                        </div>
+                        <div class="item1">
+                            <div class="stock">in stock</div>
+                        </div>
+                        <div class="item1"><img src="images/3dot.png" alt="" class="dots">
+                            <div class="editaction">
+                                <i class="fas fa-pencil-alt"><span>edit</span></i>
+                                <i class="fas fa-trash-alt"><span>delete</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

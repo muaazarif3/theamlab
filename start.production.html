@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start production</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="materialbox" style="gap: 24px;">
+            <div class="materialheader">
+                <p>start production</p>
+                <a href="order.html"><img src="images/close.png" alt=""></a>
+            </div>
+            <div class="yellowtick">
+                <img src="images/yellowtick.png" alt="">
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    order&nbsp;id<span>AAM1234567890</span>
+                </div>
+                <div class="startcol">
+                    PO&nbsp;number<span>000001&nbsp;-&nbsp;202345</span>
+                </div>
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    qunatity<span>12</span>
+                </div>
+                <div class="startcol">
+                    Lead&nbsp;Time:<span>February&nbsp;07,&nbsp;2023</span>
+                </div>
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    cost<span style="color: #4FAF81;">12,3124.09 AED</span>
+                </div>
+            </div>
+
+
+            <div class="radio-item">
+                <input type="radio" style="width: 25px;">
+                <div class="radio-text">I confirm that I’m able to produce this order on the terms provided and I’m
+                    ready to start production immediately. </div>
+            </div>
+            <div class="radio-item">
+                <input type="radio" >
+                <div class="radio-text">I agree to the <span style="color: #FFD633;">Terms & Conditions</span></div>
+            </div>
+            <div class="radio-item">
+                <input type="radio" >
+                <div class="radio-text">I agree to the <span style="color: #FFD633;">Terms & Conditions</span></div>
+            </div>
+
+            <div class="startfooter">
+                <div class="agreebtn">
+                    <a href="order.html"><img src="images/tick.png" alt=""> agree</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let ritema = document.querySelectorAll('.ritema');
+
+        ritema.forEach(element => {
+            element.addEventListener('click', () => {
+                element.classList.toggle('active');
+            })
+        });
+
+
+    </script>
+
+</body>

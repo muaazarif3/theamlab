@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start production</title>
+    <link rel="stylesheet" href="price.css">
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="materialbox">
+            <div class="materialheader">
+
+                <div class="part1">
+                    <p>Production: AM102912129342</p>
+                    <a href="order.html"><img src="images/close.png" alt=""></a>
+                </div>
+                <div class="part2">
+                    job expire in:<div class="m13"> 01D:01h:13M</div>
+                </div>
+                <div class="question" style="top: 70px;"><img src="images/question.png" alt="">Need&nbsp;help?</div>
+            </div>
+            <div class="blockrow">
+                <div class="blocks">
+                    <div class="block1 active">details</div>
+                    <div class="block1" style="width: 120px;" id="btn">activity&nbsp;feed</div>
+                    <div class="block1" style="width: 225px;" id="btn2">quality&nbsp;control</div>
+                    <div class="block1" id="btn3">notes</div>
+                </div>
+
+                <div class="blocks2">Order&nbsp;id:<span>123324212321</span></div>
+            </div>
+
+            <div class="hardbody">
+                <div class="col1">
+                    <div class="galleryimg">
+                        <img src="images/fixed1.png" alt="" style="margin: 0;">
+                    </div>
+                    <div class="dawnload" style="background: #ffcc00; color: #000; border: none;"><img src="images/blackdawnload.png" alt="">dawnload</div>
+                </div>
+                <div class="col2" style="padding: 0;">
+                    <div class="blocks2">part&nbsp;ID:<span>127990</span></div>
+                    <div class="blocks2">technology:<span>Sheet&nbsp;Fabrication;&nbsp;Laser Cutting</span></div>
+                    <div class="blocks2">quntity:<span>1 piece</span></div>
+                    <div class="blocks2">surface&nbsp;Finishing:<span>Painting&&nbsp;Primin, Powder&nbsp;Coating</span></div>
+                    <div class="blocks2">Material:<span>Stainless Steel 1.4301 / 304</span></div>
+                    <div class="blocks2">surface area:<span>281 cm3 </span></div>
+                    <div class="blocks2">Dimensions:<span>220 x 45x 120</span></div>
+                    <div class="blocks2">total area:<span> AED 50</span></div>
+                
+                    <div class="orderlist">
+                        <div class="block3">1. General Tolerance : ISO 2768</div>
+                        <div class="block3">2. Deburr and break sharp edges</div>
+                        <div class="block3">3. Scratches are not acceptable&nbsp;</div>
+                    </div>
+                
+                </div>
+                <div class="col3">
+                        <div class="invoice">
+                            PO:&nbsp;237578612
+                            <div class="invoicebtn">
+                                <img src="images/yellow dawnload.png" alt="">invoice
+                            </div>
+                        </div>
+                        <div class="warningbox">
+                            <img src="images/Warning-box.png" alt="">
+                        </div>
+                </div>        
+            </div>
+            <div class="hardfooter">
+                <div class="cancel">
+                    <div class="dawnload">cancel</div>
+                </div>
+                <div class="both">
+                  <div class="dawnload" style="color: #8c8c8c;">dawnload<img src="images/star-3.png" alt=""></div>
+                  <div class="dawnload" style="background: #ffcc00; color: #000; border: none;"><img src="images/blackdawnload.png" alt="">save</div>
+     
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script>
+        let block=document.querySelectorAll('.block1');
+        let container=document.querySelector('.hardbody')
+
+        block.forEach( e=>{
+            e.addEventListener('click', ()=>{
+                block.forEach(x =>{
+                    x.classList.remove('active');
+                });
+                e.classList.add('active');
+            });
+        });
+
+        btn.addEventListener("click", () => {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status === 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+
+            };
+            xhr.open('GET', 'ajaxfile/hard1ajax.html', true);
+            xhr.send();
+        });
+        btn2.addEventListener("click", () => {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status === 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+
+            };
+            xhr.open('GET', 'ajaxfile/hard2ajax.html', true);
+            xhr.send();
+        });
+        btn3.addEventListener("click", () => {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status === 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+
+            };
+            xhr.open('GET', 'ajaxfile/hardajax3.html', true);
+            xhr.send();
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

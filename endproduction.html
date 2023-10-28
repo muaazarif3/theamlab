@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End production</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="materialbox" style="gap: 24px;">
+            <div class="materialheader">
+                <p>Decline Production</p>
+                <a href="order.html"><img src="images/close.png" alt=""></a>
+            </div>
+            <div class="yellowtick">
+                <img src="images/redcross.png" alt="">
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    order&nbsp;id<span>AAM1234567890</span>
+                </div>
+                <div class="startcol">
+                    PO&nbsp;number<span>000001&nbsp;-&nbsp;202345</span>
+                </div>
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    qunatity<span>12</span>
+                </div>
+                <div class="startcol">
+                    Lead&nbsp;Time:<span>February&nbsp;07,&nbsp;2023</span>
+                </div>
+            </div>
+            <div class="startrow">
+                <div class="startcol">
+                    cost<span style="color: #4FAF81;">12,3124.09 AED</span>
+                </div>
+            </div>
+            <div class="radio-item">
+                <input type="radio" style="width: 25px;">
+                <div class="radio-text">Please note that too many declined orders will impact your overall rating which
+                    may result in a temporary suspension</div>
+            </div>
+
+            <div class="drop1">
+                <div class="br">
+                    reason
+                </div>
+                <div class="select">
+                    <select name="Brand" id="Brand">
+                        <option value="all">not enough Time</option>
+                        <option value="nothing">nothing</option>
+                        <option value="choosen">all</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="startfooter" style="margin-top: 35px;">
+                <div class="agreebtn">
+                    <a href="order.html"><img src="images/blackclose.png" alt="">Decline</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let ritema = document.querySelector('.ritema');
+
+
+        ritema.addEventListener('click', () => {
+            ritema.classList.toggle('active');
+        })
+
+    </script>
+
+
+</body>

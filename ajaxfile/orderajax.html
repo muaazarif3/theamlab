@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="price.css">
+</head>
+
+<body>
+
+
+    <div class="row" id="demo">
+        <div class="col-xl-12">
+            <div class="board">
+                <div class="filter">
+                    <div class="serachimg">
+                        <img src="images/search.png" alt="">
+                        <input type="search" placeholder="search by surface finish">
+                    </div>
+                    <div class="bigdropdown">
+                        <div class="dropdown">
+                            <p>expiry date</p>
+                            <img src="images/star-3.png" alt="">
+                        </div>
+                        <div class="filterbox">
+                            <img src="images/filter2.png" alt=""> filter
+                        </div>
+                        <div class="analytic">
+                            <img src="images/analytic.png" alt=""><span class="text1">analytic
+                                view</span>
+                            <div class="toggle-1">
+                                <div class="togglebtn">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metarialtabel">
+                    <div class="tabelheader1">
+                        <div class="item1">P.O number</div>
+                        <div class="item1">technology</div>
+                        <div class="item1">Material</div>
+                        <div class="item1">surface Finishing</div>
+                        <div class="item1">quntity</div>
+                        <div class="item1">price</div>
+                        <div class="item1">actions</div>
+                        <div class="item1"></div>
+                    </div>
+                   
+                    <div class="tabelrow">
+                        <div class="item1">AM20220200001</div>
+                        <div class="item1">3D Printing; MJF</div>
+                        <div class="item1">Stainless Steel 316L</div>
+                        <div class="item1">Polishing; Honed</div>
+                        <div class="item1">67</div>
+                        <div class="item1">
+                            1,5205.92 AED
+                        </div>
+                        <div class="item1"><img src="images/cricle-1.png" alt=""><img src="images/cricle-2.png" alt=""
+                                id="circle"></div>
+                        <div class="item1">
+                            <div class="m13"> 01D:01h:13M</div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">AM20220200001</div>
+                        <div class="item1">3D Printing; MJF</div>
+                        <div class="item1">Stainless Steel 304</div>
+                        <div class="item1">Anodizing II</div>
+                        <div class="item1">01</div>
+                        <div class="item1">
+                            240,9705.82 AED
+                        </div>
+                        <div class="item1"><img src="images/cricle-1.png" alt=""><img src="images/cricle-2.png" alt=""
+                                id="circle"></div>
+                        <div class="item1">
+                            <div class="m13"> 01D:01h:13M</div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">AM20220200001</div>
+                        <div class="item1">3D Printing; SLS</div>
+                        <div class="item1">Nylon 12 GF</div>
+                        <div class="item1">none</div>
+                        <div class="item1">13</div>
+                        <div class="item1">
+                            12,459.69 AED
+                        </div>
+                        <div class="item1"><img src="images/cricle-1.png" alt=""><img src="images/cricle-2.png" alt=""
+                                id="circle"></div>
+                        <div class="item1">
+                            <div class="m13"> 01D:01h:13M</div>
+                        </div>
+                    </div>
+                    <div class="tabelrow">
+                        <div class="item1">AM20220200001</div>
+                        <div class="item1">3D Printing; SLA</div>
+                        <div class="item1">ALU 457</div>
+                        <div class="item1">Chroming</div>
+                        <div class="item1">92</div>
+                        <div class="item1">
+                            4,398.45 AED
+                        </div>
+                        <div class="item1"><img src="images/cricle-1.png" alt=""><img src="images/cricle-2.png" alt=""
+                                id="circle"></div>
+                        <div class="item1">
+                            <div class="m13"> 01D:01h:13M</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        circle.forEach(e => {
+            e.addEventListener('click', () => {
+                full.classList.add('active');
+            });
+        });
+        work.addEventListener('click', () => {
+            full.classList.remove('active');
+        })
+    </script>
+
+</body>
+
+</html>
